@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Støtte – Regnestjernen</title>
+  <meta name="description" content="Få hjelp med Regnestjernen-appen. Vanlige spørsmål, feilsøking og kontaktinformasjon.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --purple: #6C5CE7; --dark: #1A0533; --gold: #F5C518; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.7; }
+
+    nav {
+      background: rgba(26,5,51,0.97);
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo { color: #fff; font-size: 1.3rem; font-weight: 800; text-decoration: none; }
+    nav .logo span { color: var(--gold); }
+    nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.95rem; margin-left: 24px; }
+    nav a:hover { color: #fff; }
+
+    header {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--purple) 100%);
+      color: #fff;
+      padding: 60px 24px 52px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; font-weight: 900; margin-bottom: 10px; }
+    header p { font-size: 1.05rem; opacity: 0.85; }
+
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .faq-section h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 20px;
+      border-left: 4px solid var(--purple);
+      padding-left: 12px;
+    }
+
+    .faq { margin-bottom: 40px; }
+    details {
+      background: #fff;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+    summary {
+      padding: 18px 20px;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--dark);
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; font-size: 1.4rem; color: var(--purple); font-weight: 300; }
+    details[open] summary::after { content: "−"; }
+    details p, details ul { padding: 0 20px 18px; color: #444; font-size: 0.97rem; }
+    details ul { padding-left: 36px; }
+    details li { margin-bottom: 6px; }
+
+    .contact-box {
+      background: linear-gradient(135deg, var(--dark), var(--purple));
+      border-radius: 16px;
+      padding: 36px;
+      color: #fff;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .contact-box h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 10px; }
+    .contact-box p { opacity: 0.85; margin-bottom: 24px; }
+    .contact-box a.btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      font-weight: 800;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .contact-box a.btn:hover { opacity: 0.9; }
+    .contact-box .email-label {
+      display: block;
+      margin-top: 16px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    .subscription-steps {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+      margin-bottom: 40px;
+    }
+    .subscription-steps h3 { font-weight: 700; margin-bottom: 14px; color: var(--dark); }
+    .step { display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start; }
+    .step-num {
+      background: var(--purple);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.85rem;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step p { color: #444; font-size: 0.97rem; }
+
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.9rem;
+    }
+    footer a { color: rgba(255,255,255,0.8); text-decoration: none; margin: 0 10px; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">Regne<span>stjernen</span></a>
+  <div>
+    <a href="/support/">Støtte</a>
+    <a href="/privacy/">Personvern</a>
+  </div>
+</nav>
+
+<header>
+  <h1>&#128587; Hjelp &amp; Støtte</h1>
+  <p>Vi er her for å hjelpe deg. Finn svar nedenfor eller ta kontakt.</p>
+</header>
+
+<main>
+
+  <div class="faq-section faq">
+    <h2>Abonnement og kjøp</h2>
+
+    <details>
+      <summary>Hva koster abonnementet?</summary>
+      <p>Regnestjernen tilbyr et månedlig abonnement. Prisen vises i App Store på din enhet (avhenger av land og valuta). Du kan prøve gratisinnholdet uten å abonnere.</p>
+    </details>
+
+    <details>
+      <summary>Hvordan kansellerer jeg abonnementet?</summary>
+      <p>Abonnementet administreres av Apple og kanselleres via iOS-innstillinger:</p>
+      <ul>
+        <li>Gå til <strong>Innstillinger</strong> på iPhone/iPad</li>
+        <li>Trykk på ditt navn øverst</li>
+        <li>Velg <strong>Abonnementer</strong></li>
+        <li>Finn Regnestjernen og trykk <strong>Kanseller abonnement</strong></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Kan jeg gjenopprette et tidligere kjøp?</summary>
+      <p>Ja. Åpne Regnestjernen-appen, gå til abonnementsskjermen og trykk <strong>Gjenopprett kjøp</strong>. Du må bruke samme Apple ID som ble brukt ved det opprinnelige kjøpet.</p>
+    </details>
+
+    <details>
+      <summary>Kan jeg bruke appen på flere enheter?</summary>
+      <p>Abonnementet er knyttet til din Apple ID. Du kan bruke appen på alle enheter som er logget inn med samme Apple ID. Husk at spillerprofiler lagres lokalt på hver enhet og synkroniseres ikke mellom enheter.</p>
+    </details>
+
+    <details>
+      <summary>Refusjon</summary>
+      <p>Refusjonskrav behandles av Apple. Kontakt Apple Support via <strong>reportaproblem.apple.com</strong> for å søke om refusjon.</p>
+    </details>
+  </div>
+
+  <div class="faq-section faq">
+    <h2>Bruk av appen</h2>
+
+    <details>
+      <summary>Hvordan oppretter jeg en profil for barnet mitt?</summary>
+      <p>Første gang du åpner appen vil du bli bedt om å opprette en profil. Velg navn og aldersgruppe for barnet. Du kan opprette opptil 4 profiler – nyttig for søsken.</p>
+    </details>
+
+    <details>
+      <summary>Hva er Foreldrepanelet?</summary>
+      <p>Foreldrepanelet gir deg oversikt over barnets fremgang og lar deg justere innstillinger. Det er beskyttet med en 4-sifret PIN-kode. Tilgang ved å trykke på tannhjulikonet i appen.</p>
+    </details>
+
+    <details>
+      <summary>Hva betyr de ulike medaljene?</summary>
+      <ul>
+        <li><strong>Bronse:</strong> Fullført nivå</li>
+        <li><strong>Sølv:</strong> Fullført med god nøyaktighet</li>
+        <li><strong>Gull:</strong> Fullført med perfekt eller nær-perfekt resultat</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Appen starter ikke / krasjer</summary>
+      <p>Prøv følgende:</p>
+      <ul>
+        <li>Lukk appen helt og åpne den igjen</li>
+        <li>Start enheten på nytt</li>
+        <li>Sjekk at du har den nyeste versjonen av appen (App Store → Oppdateringer)</li>
+        <li>Sjekk at enheten har iOS 16 eller nyere</li>
+      </ul>
+      <p>Hjelper ikke dette? Kontakt oss via e-post nedenfor.</p>
+    </details>
+
+    <details>
+      <summary>Mister vi fremgangen om vi oppdaterer appen?</summary>
+      <p>Nei. Fremgang lagres sikkert på enheten og påvirkes ikke av appoppdateringer.</p>
+    </details>
+
+    <details>
+      <summary>Fungerer appen uten internett?</summary>
+      <p>Ja, Regnestjernen fungerer helt uten internettforbindelse. Internett brukes kun ved kjøp og gjenoppretting av abonnement.</p>
+    </details>
+  </div>
+
+  <div class="contact-box">
+    <h2>Ikke fant du svaret?</h2>
+    <p>Send oss en e-post, så svarer vi innen 1–2 virkedager.</p>
+    <a href="mailto:support@regnestjernen.no" class="btn">Send e-post</a>
+    <span class="email-label">support@regnestjernen.no</span>
+  </div>
+
+</main>
+
+<footer>
+  <p><a href="/">Regnestjernen</a> &middot; <a href="/privacy/">Personvern</a> &middot; <a href="/terms/">Vilkår</a></p>
+  <p style="margin-top:10px;">&copy; 2025 Jarle Steinnes</p>
+</footer>
+
+</body>
+</html>
